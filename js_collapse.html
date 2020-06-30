@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>!DOCTYPE</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+ </head>
+ <body>
+ 	<!-- Кнопка з текстом який відкривається при нажатті -->
+<button class="btn btn-info" data-toggle="collapse" data-target="#hide">JS Collapse</button>
+  <div class="collapse" id="hide">
+    Какой-либо скрытый текст!
+  </div>
+
+<!-- Спан-текст з текстом який закривається при нажатті -->
+	<br><span data-toggle="collapse" data-target="#hid">JS Collapse</span>
+  	<div class="collapse in" id="hid">
+    	Какой-либо скрытый текст!
+  	</div>
+
+<!-- Ссилка з текстом який відкривається при нажатті -->
+	<br><a data-toggle="collapse" href="#hiding">JS Collapse</a>
+  	<div class="collapse" id="hiding">
+    	Какой-либо скрытый текст!
+  	</div>
+  	
+
+<!-- Група панелей які відкривають тіло при нажатті-->
+  <div class="panel-group" id="collapse-group">
+    <!-- bootstrap 4 it is nmed according-->
+    <div class="panel panel-info">
+      <div class="panel-heading">
+        <a data-toggle="collapse" data-parent="#collapse-group" href="#el1">Первый</a>
+      </div>
+    <div id="el1" class="collapse">
+      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+       <div class="panel-footer">footer</div>
+      </div>
+    </div>
+
+    <div class="panel panel-danger">
+      <div class="panel-heading">
+        <a data-toggle="collapse" data-parent="#collapse-group" href="#el2">Второй</a>
+      </div>
+      <div id="el2" class="collapse">
+        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+         <div class="panel-footer">footer</div>
+        </div>
+    </div>
+</div>
+
+ 	 <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+ </body>
+ </html>
